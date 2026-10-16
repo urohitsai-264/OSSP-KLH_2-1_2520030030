@@ -11,7 +11,8 @@ int main()
     while (1)
     {
         printf("2520030030_shell> ");
-        fgets(command, sizeof(command), stdin);
+        if (fgets(command, sizeof(command), stdin) == NULL)
+            break;
         command[strcspn(command, "\n")] = '\0';
         if (strcmp(command, "exit") == 0)
             break;
