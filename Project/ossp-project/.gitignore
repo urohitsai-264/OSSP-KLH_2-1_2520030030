@@ -1,0 +1,4 @@
+*.o
+ossp_monitor
+*.tmp
+*.log
